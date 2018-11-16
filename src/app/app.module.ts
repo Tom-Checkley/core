@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
 
+import { firebaseConfig } from '../environments/firebase.config';
+
 @NgModule({
   declarations: [
     AppComponent

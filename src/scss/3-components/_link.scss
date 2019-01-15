@@ -1,0 +1,15 @@
+$link-color:									$color-primary !default;
+$link-hover-color:						$base-font-color !default;
+$link-text-decoration:				none !default;
+$link-hover-text-decoration:	underline !default;
+
+.link {
+	color: $link-color;
+	text-decoration: $link-text-decoration;
+
+	&:hover,
+	&:focus {
+		color: $link-hover-color;
+		text-decoration: $link-hover-text-decoration;
+	}
+}

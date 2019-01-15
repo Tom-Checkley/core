@@ -1,0 +1,14 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	@include font-size($base-font-size);
+	color: $base-font-color;
+}
+
+img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}

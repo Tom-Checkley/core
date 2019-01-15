@@ -1,0 +1,41 @@
+
+// Colors
+$color-primary:				$COLOR-BlueDark;
+$color-secondary:			#212121;
+$color-contrast:			complement($color-primary);
+
+// TYPEOGRAPHY
+$font-serif: 					'Times New Roman', Times, serif;
+$font-sans-serif:			Arial, Helvetica, sans-serif;
+
+$font-size-smallest: 	10;
+$font-size-smaller:	 	12;
+$font-size-small: 		14;
+$font-size-med:				16;
+$font-size-large:			18;
+$font-size-larger:		20;
+$font-size-x-large:		22;
+$font-size-xx-large:	24;
+$font-size-xxx-large:	36;
+
+$font-line-height:		1.5;
+
+$base-font-size:			$font-size-med;
+$base-line-height:		$base-font-size * $font-line-height;
+$base-font-color:			$color-secondary;
+
+// Borders
+$border-color:				$COLOR-GreyLighter;
+$border-radius:				4;
+
+//Breakpoints
+$bp-smallest:		340;
+$bp-small:			480;
+$bp-med:				670;
+$bp-medLg:			850;
+$bp-large:			1024;
+$bp-larger:			1400;
+$bp-largest:		1700;
+
+$max-width:			1200;
+

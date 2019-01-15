@@ -1,0 +1,6 @@
+@import '1-settings/_index';
+
+.blog {
+	@include font-size($font-size-x-large);
+	color: $COLOR-BlueDarker;
+}

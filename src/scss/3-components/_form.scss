@@ -1,0 +1,11 @@
+$form-spacing:		$base-line-height / 2;
+
+.form {}
+
+.form__row {
+	@include margin-y($form-spacing);
+}
+.form__label {
+	@include margin-bottom($form-spacing / 4);
+	display: block;
+}

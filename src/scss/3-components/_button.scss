@@ -5,16 +5,19 @@ $button-color:						$color-primary;
 $button-secondary-color:	$color-secondary;
 $button-padding:					$base-line-height;
 
+@if $COMPONENT_BUTTON {
 
-.button {
-	@include padding($button-padding / 2, $button-padding);
-	appearance: none;
-	@include border($button-color, $button-border-width, solid);
-	@include border-radius($button-border-radius);
-	color: $button-color;
-	text-decoration: none;
-	&:hover {
-		background-color: $button-color;
-		color: $button-secondary-color;
+	.button {
+		@include padding($button-padding / 2, $button-padding);
+		appearance: none;
+		@include border($button-color, $button-border-width, solid);
+		@include border-radius($button-border-radius);
+		color: $button-color;
+		text-decoration: none;
+		&:hover {
+			background-color: $button-color;
+			color: $button-secondary-color;
+		}
 	}
+
 }

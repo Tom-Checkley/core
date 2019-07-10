@@ -6,15 +6,19 @@ $input-border-style:			solid;
 $input-border-size:				1;
 $input-focus-color:				$color-primary;
 
-.input {
-	width: 100%;
-	@include font-size($input-font-size);
-	@include padding($input-padding);
-	@include border($input-border-color, $input-border-size, $input-border-style);
-	@include border-radius($input-border-radius);
+@if $COMPONENT_INPUT {
 
-	&:focus {
-		outline: none;
-		border-color: $input-focus-color;
+	.input {
+		width: 100%;
+		@include font-size($input-font-size);
+		@include padding($input-padding);
+		@include border($input-border-color, $input-border-size, $input-border-style);
+		@include border-radius($input-border-radius);
+	
+		&:focus {
+			outline: none;
+			border-color: $input-focus-color;
+		}
 	}
+
 }

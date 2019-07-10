@@ -1,11 +1,23 @@
-$form-spacing:		$base-line-height / 2;
+$form-spacing:				$base-line-height / 2;
+$form-warning-color:	$COLOR-RedDark;
 
-.form {}
+@if $COMPONENT_FORM {
 
-.form__row {
-	@include margin-y($form-spacing);
-}
-.form__label {
-	@include margin-bottom($form-spacing / 4);
-	display: block;
+	.form {}
+
+	.form__row {
+		@include margin-y($form-spacing);
+	}
+	.form__label {
+		@include margin-bottom($form-spacing / 4);
+		display: block;
+	}
+
+	.form__warning {
+		color: $form-warning-color;
+		p {
+			@include margin-top($base-line-height / 4);
+		}
+	}
+
 }

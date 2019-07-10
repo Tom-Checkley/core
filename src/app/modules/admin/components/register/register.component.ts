@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import { User } from 'src/app/shared/interfaces/user';
+import { User } from 'src/app/modules/shared/interfaces/user';
+import { AuthService } from 'src/app/services/auth.service';
+
 
 @Component({
   selector: 'app-register',
@@ -14,7 +16,7 @@ export class RegisterComponent implements OnInit {
   confirmPw: string;
   pwMatch: boolean;
 
-  constructor() { }
+  constructor(private authService: AuthService) { }
 
   ngOnInit() {
   }
@@ -24,10 +26,9 @@ export class RegisterComponent implements OnInit {
       this.pwMatch = false;
       return false;
     }
-    this.user = {
-      email: this.email,
-      password: this.password
-    };
+    console.log(this.user, this.password);
+    this.authService.register(this.email, this.password);
+
   }
 
 }

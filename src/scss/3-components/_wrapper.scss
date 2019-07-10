@@ -1,7 +1,11 @@
 $wrapper-max-width:			$max-width;
 
-.wrapper {
-	width: 95%;
-	max-width: rem($wrapper-max-width);
-	@include margin-x(auto);
+@if $COMPONENT_WRAPPER {
+
+	.wrapper {
+		width: 95%;
+		max-width: rem($wrapper-max-width);
+		@include margin-x(auto);
+	}
+
 }

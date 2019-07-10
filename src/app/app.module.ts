@@ -3,12 +3,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
+import { firebaseConfig } from '../environments/firebase.config';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './modules/core/core.module';
 import { SharedModule } from './modules/shared/shared.module';
+import { AngularFireModule } from '@angular/fire';
 
-import { firebaseConfig } from '../environments/firebase.config';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,12 @@ import { firebaseConfig } from '../environments/firebase.config';
     SharedModule,
     CoreModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    AngularFireModule,
+
+  ],
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }
